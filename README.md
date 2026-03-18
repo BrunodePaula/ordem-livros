@@ -1,38 +1,68 @@
-# sv
+# Ordem de Livros
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+Uma aplicação web desenvolvida com SvelteKit para organizar e visualizar séries de livros, autores e livros em ordem cronológica. Permite explorar coleções de livros, biografias de autores e navegar pelas séries literárias de forma intuitiva.
 
-## Creating a project
+## Funcionalidades
 
-If you're seeing this, you've probably already done this step. Congrats!
+- **Listagem de Séries**: Visualize todas as séries disponíveis com descrições e imagens.
+- **Detalhes de Autores**: Acesse biografias completas e informações sobre os autores.
+- **Organização de Livros**: Veja os livros de cada série em ordem, com links para compra e imagens.
+- **Interface Responsiva**: Desenvolvida com Tailwind CSS para uma experiência fluida em dispositivos móveis e desktop.
 
-```bash
-# create a new project in the current directory
-npx sv create
+## Tecnologias Utilizadas
 
-# create a new project in my-app
-npx sv create my-app
-```
+- **SvelteKit**: Framework para construção de aplicações web.
+- **TypeScript**: Tipagem estática para maior robustez.
+- **Tailwind CSS**: Framework CSS para estilização rápida e responsiva.
+- **Vite**: Ferramenta de build e desenvolvimento rápido.
+- **Marked**: Para renderização de Markdown em biografias.
 
-## Developing
+## Instalação e Execução
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+1. Clone o repositório:
+   ```bash
+   git clone <url-do-repositorio>
+   cd ordem-livros
+   ```
 
-```bash
-npm run dev
+2. Instale as dependências:
+   ```bash
+   npm install
+   ```
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+3. Execute o servidor de desenvolvimento:
+   ```bash
+   npm run dev
+   ```
 
-## Building
+   Ou abra o app em uma nova aba do navegador:
+   ```bash
+   npm run dev -- --open
+   ```
 
-To create a production version of your app:
+## Build para Produção
 
+Para criar uma versão de produção:
 ```bash
 npm run build
 ```
 
-You can preview the production build with `npm run preview`.
+Para visualizar a build de produção:
+```bash
+npm run preview
+```
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+## Estrutura do Projeto
+
+- `src/routes/`: Páginas da aplicação (home, autores, séries).
+- `src/components/`: Componentes reutilizáveis (itens de série, autor, etc.).
+- `src/constants/`: Dados estáticos de autores e séries.
+- `static/`: Arquivos estáticos (imagens, etc.).
+
+## Contribuição
+
+Sinta-se à vontade para contribuir com melhorias, correções ou novas funcionalidades. Abra uma issue ou envie um pull request.
+
+## Licença
+
+Este projeto é de código aberto e está sob a licença MIT.
